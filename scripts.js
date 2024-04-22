@@ -10,7 +10,7 @@ function convertValues() {
     const dolarToday = 5.2  // Extrai as taxas de câmbio do objeto de dados
     const euroToday = 5.5
     const libraToday = 6.4
-    const bitcoinToday = 336.9
+    const bitcoinToday = 342533.4
 
 
     if (currencySelect.value == "dolar") { // Se o select estiver selecionado o valor de dolar, entre aqui 
