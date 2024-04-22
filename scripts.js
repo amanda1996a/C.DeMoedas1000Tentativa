@@ -13,7 +13,7 @@ function convertValues() {
     const bitcoinToday = 342533.4
 
 
-    if (currencySelect.value == "dolar") { // Se o select estiver selecionado o valor de dolar, entre aqui 
+    if (currencySelect.value == "dolar") {  // Se o select estiver selecionado o valor de dolar, entre aqui 
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
@@ -21,14 +21,14 @@ function convertValues() {
     }
 
 
-    if (currencySelect.value == "euro") { // Se o select estiver selecionado o valor de euro, enre aqui
+    if (currencySelect.value == "euro") { // Se o select estiver selecionado o valor de euro, entre aqui
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(inputCurrencyValue / euroToday)
     }
 
-    if (currencySelect.value == "libra") { // Se o select estiver selecionado o valor de euro, enre aqui
+    if (currencySelect.value == "libra") { // Se o select estiver selecionado o valor de libra, entre aqui
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "GBP"
@@ -36,10 +36,10 @@ function convertValues() {
     }
 
      // Converte o valor de entrada com base na moeda de destino selecionada
-    if (currencySelect.value == "bitcoin") { // Se o select estiver selecionado o valor de euro, enre aqui
+    if (currencySelect.value == "bitcoin") { // Se o select estiver selecionado o valor de bitcoin, entre aqui
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
-            currency: "BRL"
+            currency: "BTC"
         }).format(inputCurrencyValue / bitcoinToday)
     }
 
